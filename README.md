@@ -17,8 +17,8 @@ Esta é uma API RESTful desenvolvida com Node.js, Express e Sequelize, conectada
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
+   git clone https://github.com/I4g0m1t0/API_Js.git
+   cd API_Js
 
 2. **Instale as dependências:**
   npm install
