@@ -12,6 +12,39 @@ Esta é uma API RESTful desenvolvida com Node.js, Express e Sequelize, conectada
 - bcrypt
 - Postman
 
+
+## ⚡ Pacotes npm Utilizados
+
+### bcrypt@5.1.1
+- **Descrição**: Biblioteca para hashing de senhas, aumentando a segurança das credenciais dos usuários.
+- **Uso**: Utilizado para criptografar senhas antes de armazená-las no banco de dados.
+- **Instalação**: `npm install bcrypt@5.1.1`
+
+### dotenv@16.4.7
+- **Descrição**: Carrega variáveis de ambiente a partir de um arquivo `.env`.
+- **Uso**: Utilizado para gerenciar configurações sensíveis, como credenciais de banco de dados e chaves secretas.
+- **Instalação**: `npm install dotenv@16.4.7`
+
+### express@4.21.2
+- **Descrição**: Framework web para Node.js, facilitando a criação de APIs e aplicações web.
+- **Uso**: Utilizado para definir rotas e middleware para a aplicação.
+- **Instalação**: `npm install express@4.21.2`
+
+### jsonwebtoken@9.0.2
+- **Descrição**: Implementação de JWT (JSON Web Token) para autenticação.
+- **Uso**: Utilizado para gerar e verificar tokens JWT para autenticação de usuários.
+- **Instalação**: `npm install jsonwebtoken@9.0.2`
+
+### mysql2@2.3.3
+- **Descrição**: Driver MySQL para Node.js.
+- **Uso**: Utilizado para conectar e interagir com o banco de dados MySQL.
+- **Instalação**: `npm install mysql2@2.3.3`
+
+### sequelize@6.37.7
+- **Descrição**: ORM (Object-Relational Mapping) para Node.js, simplificando a interação com bancos de dados SQL.
+- **Uso**: Utilizado para definir modelos e realizar operações no banco de dados.
+- **Instalação**: `npm install sequelize@6.37.7`
+
 ## 🚀 Instalação e Execução
 
 1. **Clone o repositório:**
@@ -110,23 +143,24 @@ A autenticação é realizada via JWT. Após o login, um token é retornado e de
 
 ## 📁 Estrutura do Projeto
  ```pgsql
-      ├── src
-      │   ├── config
-      │   │   └── database.js
-      │   ├── controllers
-      │   │   ├── authController.js
-      │   │   ├── projectController.js
-      │   │   └── taskController.js
-      │   ├── models
-      │   │   ├── index.js
-      │   │   ├── project.js
-      │   │   ├── task.js
-      │   │   └── user.js
-      │   ├── routes
-      │   │   ├── authRoutes.js
-      │   │   ├── projectRoutes.js
-      │   │   └── taskRoutes.js
-      │   └── server.js
+      ├── Nome_Da_Pasta
+      |   ├── src
+      |   │   ├── config
+      |   │   │   └── database.js
+      |   │   ├── controllers
+      |   │   │   ├── userController.js
+      |   │   │   ├── projectController.js
+      |   │   │   └── taskController.js
+      |   │   ├── models
+      |   │   │   ├── project.js
+      |   │   │   ├── task.js
+      |   │   │   └── user.js
+      |   │   ├── routes
+      |   │   │   ├── authRoutes.js
+      |   │   │   ├── projectRoutes.js
+      |   │   │   ├── taskRoutes.js
+      |   │   │   └── userRoutes.js
+      |   └── server.js
       ├── .env
       ├── package.json
       └── README.md
