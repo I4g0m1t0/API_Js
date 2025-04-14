@@ -47,16 +47,18 @@ Esta é uma API RESTful desenvolvida com Node.js, Express e Sequelize, conectada
 
 ## 🚀 Instalação e Execução
 
-1. **Clone o repositório:**
+### 1. **Clone o repositório:**
 
    ```bash
    git clone https://github.com/I4g0m1t0/API_Js.git
    cd API_Js
+   ```
 
-2. **Instale as dependências:**
+### 2. **Instale as dependências:**
+   ```bash
   npm install
-
-3. **Configure o banco de dados:**
+   ```
+### 3. **Configure o banco de dados:**
 - Certifique-se de que o MySQL está rodando (pode utilizar o XAMPP).
 - Crie um banco de dados com o nome desejado (por exemplo, atividade_js).
 - Configure as variáveis de ambiente no arquivo .env:
@@ -69,9 +71,10 @@ Esta é uma API RESTful desenvolvida com Node.js, Express e Sequelize, conectada
   DB_DIALECT=mysql
   JWT_SECRET=sua_chave_secreta
 
-4. **Execute a aplicação:**
+### 4. **Execute a aplicação:**
    ```bash
     npm start
+   ```
 A aplicação estará disponível em http://localhost:3000.
 
 ## 🔐 Autenticação
