@@ -79,9 +79,7 @@ A autenticação é realizada via JWT. Após o login, um token é retornado e de
 
 ### 📬 Utilizando o Postman
 1. **Realize o cadastro de um usuário:**
-
 - Endpoint: POST /api/auth/register
-
 - Body:
   ```json
   {
@@ -91,9 +89,7 @@ A autenticação é realizada via JWT. Após o login, um token é retornado e de
   }
 
 2. **Realize o login:**
-
 - Endpoint: POST /api/auth/login
-
 - Body:
 
   ```json
@@ -102,25 +98,19 @@ A autenticação é realizada via JWT. Após o login, um token é retornado e de
     "senha": "123456"
   }
 - Resposta:
-
   ```json
   {
     "token": "seu_token_jwt"
   }
+  
 3. **Utilize o token nas requisições protegidas:**
-
 - Vá até a aba "Authorization" no Postman.
-
 - Selecione o tipo "Bearer Token".
-
 - Insira o token obtido no login.
 
 4. **Crie um projeto:**
-
 - Endpoint: POST /api/projects
-
 - Body:
-
   ```json
   {
     "nome": "Projeto Exemplo",
@@ -128,11 +118,8 @@ A autenticação é realizada via JWT. Após o login, um token é retornado e de
   }
 
 5. **Crie uma tarefa:**
-
 - Endpoint: POST /api/tasks
-
 - Body:
-
   ```json
   {
     "titulo": "Tarefa Exemplo",
